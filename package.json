@@ -1,0 +1,17 @@
+{
+  "name": "pg-lease-queue",
+  "version": "0.1.0",
+  "description": "A durable job queue in PostgreSQL: SKIP LOCKED claims, per-attempt lease tokens, NOTIFY wake-up, retries with backoff.",
+  "main": "src/index.js",
+  "files": ["src"],
+  "scripts": {
+    "test": "node --test --test-concurrency=1 test/"
+  },
+  "keywords": ["postgres", "postgresql", "job-queue", "queue", "skip-locked", "listen-notify", "worker"],
+  "author": "Ye Win Tay Za",
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "peerDependencies": { "pg": ">=8" },
+  "devDependencies": { "pg": "^8.13.1" },
+  "repository": { "type": "git", "url": "https://github.com/ywtzdev/pg-lease-queue.git" }
+}
