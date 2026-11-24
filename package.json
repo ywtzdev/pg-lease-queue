@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "files": ["src"],
   "scripts": {
-    "test": "node --test --test-concurrency=1 test/"
+    "test": "node --test test/queue.test.js"
   },
   "keywords": ["postgres", "postgresql", "job-queue", "queue", "skip-locked", "listen-notify", "worker"],
   "author": "Ye Win Tay Za",

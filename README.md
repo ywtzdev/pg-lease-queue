@@ -1,6 +1,6 @@
 # pg-lease-queue
 
-A durable job queue that lives in your PostgreSQL database. About 250 lines of Node.js, one table, and `pg` as the only dependency.
+A durable job queue that lives in your PostgreSQL database. About 200 lines of Node.js, one table, and `pg` as the only dependency.
 
 I wrote it as a standalone, open version of the job-queue design I use in production for ride-hailing dispatch ([case study](https://github.com/ywtzdev/callme-taxi-showcase)). There, the queue sends order offers and push notifications to about 1,000 drivers, and a worker that dies halfway through a job must never cause an order to be sent twice or lost.
 
